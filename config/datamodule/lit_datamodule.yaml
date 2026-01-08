@@ -1,0 +1,15 @@
+defaults:
+  - train_dataset: aihub_sample
+  - val_dataset: aihub_sample
+  - test_dataset: null
+  - predict_dataset: null
+  - processors: simple_multimodal
+
+
+_target_: datamodule.lit_datamodule.LitMultimodalDataModule
+batch_size: 4
+num_workers: 4
+pin_memory: false
+persistent_workers: true
+drop_last: false
+shuffle: true

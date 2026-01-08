@@ -1,0 +1,3 @@
+_target_: module.model.head.linear.SimpleLinear
+in_features: 768 # 128 * 3
+out_features: 1

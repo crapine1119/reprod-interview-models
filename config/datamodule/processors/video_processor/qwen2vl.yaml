@@ -1,0 +1,3 @@
+_target_: transformers.models.qwen2_vl.video_processing_qwen2_vl.Qwen2VLVideoProcessor
+
+merge_size: 2

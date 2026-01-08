@@ -1,0 +1,4 @@
+_target_: module.model.encoders.common.simple.SimpleCNN1DEncoder
+
+in_features: 1176
+out_features: 256

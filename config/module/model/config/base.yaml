@@ -1,0 +1,2 @@
+_target_: module.model.hf_config.MultimodalPreTrainedConfig
+_partial_: true

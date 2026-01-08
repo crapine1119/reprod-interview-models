@@ -1,0 +1,8 @@
+defaults:
+  - model: multimodal
+  - optimizer: adamw
+  - scheduler: cosine
+  - _self_
+
+_target_: module.lit_module.LitMultimodalModule
+_partial_: true

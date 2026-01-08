@@ -1,0 +1,6 @@
+# HF Model (PreTrainedModel)
+defaults:
+  - config: base
+
+_target_: module.model.hf_model.MultimodalPreTrainedModel
+_partial_: true # config should be set

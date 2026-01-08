@@ -1,0 +1,14 @@
+_target_: datamodule.datasets.aihub_multimodal.AIHubMultimodalDataset
+data_dir: ${..train_dataset.data_dir}
+label_dir: ${..train_dataset.label_dir}
+data_extension: ${..train_dataset.data_extension}
+label_extension: ${..train_dataset.label_extension}
+label_prefix: ${..train_dataset.label_prefix}
+
+start_video_sec: 40.0
+end_video_sec: 50.0
+
+video_chunk_sec: ${..train_dataset.video_chunk_sec}
+fps: ${..train_dataset.fps}
+video_resize_rate: ${..train_dataset.video_resize_rate}
+require_label: ${..train_dataset.require_label}

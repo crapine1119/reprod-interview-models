@@ -1,0 +1,25 @@
+# module in config must not be module class due to reproduce with from_pretrained in HF
+# MultimodalInterviewConfig에 들어갈 "모델 아키텍처 조합"의 기본 허브 파일
+defaults:
+  - encoders/vision: simple_cnn1d
+  - encoders/audio: simple_cnn1d
+  - encoders/text: eeve2_8
+  - fusion: concat
+  - head: linear
+  - loss: mse
+  - _self_
+
+model_type: multimodal_interview
+
+# (instantiate_component에서 사용)
+allowed_target_prefixes:
+  - "module.model"
+  - "src.module.model"
+
+
+
+# ===== 라벨 맵(선택) =====
+# id2label/label2id는 운영/서빙에서 유용합니다.
+# 필요 없으면 빈 값 유지하거나 제거하세요.
+id2label: null
+label2id: null

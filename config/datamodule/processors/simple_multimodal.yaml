@@ -1,0 +1,8 @@
+defaults:
+  - video_processor: qwen2vl
+  - feature_extractor: whisper
+  - tokenizer: eeve2_8
+
+_target_: datamodule.processors.hf_processor.SimpleMultimodalProcessor
+
+max_text_length: 16
